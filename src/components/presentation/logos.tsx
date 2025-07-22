@@ -9,24 +9,20 @@ const logos = [
   "vodafone",
 ];
 
-export function LogoSectionOne() {
+export function LogosPresentation() {
   return (
-    <section className="py-8 px-8 lg:py-20">
-      <div className="container mx-auto text-center">
+    <section className="py-8 px-8 lg:py-16">
+      <div className="container mx-auto">
         <Typography
+          variant="h6"
           color="blue-gray"
-          className="text-xl font-extrabold mb-8"
+          className="mb-8 text-center font-bold uppercase"
         >
-          Trusted by the best companies
+          Trusted by
         </Typography>
-        <div className="flex flex-wrap items-center justify-center gap-8">
-          {logos.map((logo, key) => (
-            <img
-              key={key}
-              src={`logos/logo-${logo}.svg`}
-              alt="logo"
-              className="w-40"
-            />
+        <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-8">
+          {logos.map(({ logo, name }) => (
+            <img key={name} src={logo} alt={name} className="w-32 grayscale opacity-60" />
           ))}
         </div>
       </div>
@@ -34,4 +30,4 @@ export function LogoSectionOne() {
   );
 }
 
-export default LogoSectionOne;
+export default LogosPresentation;

@@ -57,7 +57,7 @@ const features = [
   }
 ];
 
-export function FeatureLanding() {
+export function FeaturePresentation() {
   return (
     <section className="px-4 mt-12">
       <div className="container mx-auto mb-10 text-center">
@@ -78,4 +78,4 @@ export function FeatureLanding() {
   );
 }
 
-export default FeatureLanding;
+export default FeaturePresentation;

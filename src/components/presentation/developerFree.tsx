@@ -4,13 +4,13 @@ import {
 } from "@material-tailwind/react";
 import ThemeProvider from "../theme-provider";
 
-export function DevPresentation() {
+export function DevFreePresentation() {
  
   return (
     <ThemeProvider>
-      <div className="h-full w-screen place-items-center bg-white py-20">
-        <div className="container mx-auto grid items-center relative lg:grid-cols-2">
-          <div className="mb-8">
+      <div className="flex place-items-center bg-white py-20">
+        <div className="container mx-auto items-center flex">
+          <div className="text-left mb-8 md:w-1/2">
             <Typography
               color="blue"
               className="flex items-center font-bold text-lg mb-5"
@@ -25,9 +25,10 @@ export function DevPresentation() {
             >
               Develop consistenly using Astro architecture principles
             </Typography>
-            <Typography color="blue-gray" className="lg:pr-32">
+            <Typography color="blue-gray" className="lg:pr-64">
               Using Inovasi Otentik Indonesia you get everything you need to start creating your fully functional and responsive Ecommerce website in days, not months.
             </Typography>
+            
           </div>
           <img src="consistenly.png" alt="components" className="mx-auto hidden md:flex" />
         </div>
@@ -36,4 +37,4 @@ export function DevPresentation() {
   );
 }
 
-export default DevPresentation;
+export default DevFreePresentation;

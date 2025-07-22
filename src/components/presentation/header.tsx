@@ -9,7 +9,7 @@ import {
   ArrowSmallRightIcon,
 } from "@heroicons/react/24/outline";
 
-export function HeroPresentation() {
+export function HeaderPresentation() {
  
   return (
     <ThemeProvider>
@@ -44,4 +44,4 @@ export function HeroPresentation() {
   );
 }
 
-export default HeroPresentation;
+export default HeaderPresentation;

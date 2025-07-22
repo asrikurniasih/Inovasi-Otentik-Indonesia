@@ -4,33 +4,30 @@ import {
 } from "@material-tailwind/react";
 import ThemeProvider from "../theme-provider";
 
-export function PalettePresentation() {
+export function PalettePresentationFree() {
  
   return (
     <ThemeProvider>
-      <div className="h-full w-screen place-items-center bg-white px-8 py-8">
-        <div className="container mx-auto grid items-center relative lg:grid-cols-2">
-          <div className="hidden lg:flex">
-            <img src="palette.png" alt="iphone" className="max-w-xl rounded-3xl mx-auto" />
-          </div>
-          
-          <div className="text-center lg:text-left">
+      <div className="flex place-items-center bg-white py-20">
+        <div className="container mx-auto items-center flex">
+          <img src="palette.png" alt="palette" className="mx-auto hidden md:flex md:w-1/2" />
+          <div className="text-left mb-8 md:w-1/2">
             <Typography
               color="blue"
-              className="flex items-center justify-center lg:justify-start !font-bold text-lg mb-5"
+              className="flex items-center font-bold text-lg mb-5"
             >
-              Attention to beautiful design
+              Modern color palette
             </Typography>
 
             <Typography
               variant="h2"
               color="blue-gray"
-              className="mb-8 leading-tight"
+              className="mb-4 leading-tight"
             >
-              Awesome color palette, variables & elements foundation.
+              Easy to work with, simply beautiful
             </Typography>
-            <Typography color="gray" className="lg:pr-20">
-              Customize your colors, sizes, spacing or typography in minutes so they can fit perfectly for your brand. Spend time creating dApps logic and UX, our tools take care of the rest.
+            <Typography color="blue-gray" className="lg:pr-64">
+              Using Inovasi Otentik Indonesia you get everything you need to start creating your fully functional and responsive Ecommerce website in days, not months.
             </Typography>
             
           </div>
@@ -40,4 +37,4 @@ export function PalettePresentation() {
   );
 }
 
-export default PalettePresentation;
+export default PalettePresentationFree;
